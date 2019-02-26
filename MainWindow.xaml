@@ -1,0 +1,26 @@
+﻿<Window x:Class="_312840ComputerParts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_312840ComputerParts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label FontSize="14">Select component to view suggestion.</Label>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnCpu" Click="btnCpu_Click" Width="84" Margin="0,0,16,0">CPU</Button>
+            <Button x:Name="btnMotherboard" Click="btnMotherboard_Click" Width="84" Margin="0,0,16,0">Motherboard</Button>
+            <Button x:Name="btnMemory" Click="btnMemory_Click" Width="84" Margin="0,0,16,0">Memory</Button>
+            <Button x:Name="btnStorage" Click="btnStorage_Click" Width="84" Margin="0,0,16,0">Storage</Button>
+            <Button x:Name="btnCase" Click="btnCase_Click" Width="84" Margin="0,0,16,0">Case</Button>
+            <Button x:Name="btnPower" Click="btnPower_Click" Width="84" Margin="0,0,16,0"> Power Supply</Button>
+            <Button x:Name="btnGraphics" Click="btnGraphics_Click" Width="84" Margin="0,0,16,0">Graphics Card</Button>
+            <Button x:Name="btnOptical" Click="btnOptical_Click" Width="84">Optical Drive</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Image x:Name="img" Height="128"/>
+            <TextBox x:Name="txtComponent" IsReadOnly="True" Width="500" TextWrapping="Wrap" FontSize="14"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
